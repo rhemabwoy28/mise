@@ -18,12 +18,12 @@ Open the local URL printed by Vite. The sample workspace uses Ghana cedis (GHS);
 ## What is here
 
 - **Overview:** sales recorded today, inventory value, reorder alerts, recent movements and invoices.
-- **Inventory:** searchable ingredient and supply list, category filters, stock counts, reorder points, unit costs, supplier names and CSV export.
-- **Point of sale:** menu checkout, customer and payment method capture, invoice creation and recipe-based ingredient deductions. A sale is blocked if the recipe would use more stock than is available.
-- **Purchases:** create a supplier order, then receive it to update on-hand stock and add an audit movement.
-- **Invoices:** view a transaction record, inspect line items, print an invoice or export the list as CSV.
+- **Inventory:** searchable ingredient and supply list, category filters, stock counts, reorder points, unit costs, supplier names, CSV export and a full stock movement history.
+- **Point of sale:** menu checkout, customer and payment method capture, invoice creation and recipe-based ingredient deductions. Menu items are disabled when the full cart would use more stock than is available.
+- **Purchases:** create multi-item supplier orders, then receive an order to update all related stock and record movements once.
+- **Invoices:** view a transaction record, inspect line items, mark a due invoice as paid, print an invoice or export the list as CSV.
 - **Reports:** inventory valuation, paid sales for the last seven days, category value and an expiry watch for the sample lot dates.
-- **Local persistence:** changes are saved in browser `localStorage`; no data leaves the device.
+- **Local persistence:** changes are saved in browser `localStorage`; no data leaves the device. If saved data cannot be read, the app keeps a recovery copy and loads the sample workspace.
 
 ## Product direction
 

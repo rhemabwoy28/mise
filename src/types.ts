@@ -38,6 +38,7 @@ export type PurchaseOrder = {
   supplier: string
   createdAt: string
   expectedAt: string
+  receivedAt?: string
   status: 'Ordered' | 'Received'
   items: { productId: string; quantity: number; unitCost: number }[]
 }
